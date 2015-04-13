@@ -1,7 +1,9 @@
 import java.util.Scanner;
+import java.io.*;
 
 public class hello {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception{
+		System.setIn(new FileInputStream("hello.txt"));
 		Scanner scan = new Scanner(System.in);
 		String line = "";
 		while(scan.hasNextLine())
